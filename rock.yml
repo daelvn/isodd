@@ -1,0 +1,19 @@
+package: isodd
+source:
+  url: git://github.com/daelvn/isodd.git
+description:
+  summary: The latest scientific breakthroughs in the field of odd numbers.
+  detailed: >
+    The fastest odd-checking module around. Nothing can compete. This is simply
+    the best module. It's so cool. It tells you all about odd numbers, like whether
+    the number is odd or not (there isn't much more to odd numbers). Optimized
+    to hell and back. Integrates with web services. A true challenged to the homonym
+    npm module. Just install it. Come on. Install it. Now. Do it.
+  homepage: https://github.com/daelvn/isodd
+dependencies:
+  - lua >= 5.1
+build:
+  type: none
+  install:
+    lua:
+      - isodd.lua
