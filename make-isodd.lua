@@ -24,7 +24,7 @@ for i = 1, maxnum-1 do
   end
   if tostring(i):match(tostring(undocumented).."$") then
     print(instring:rep(math.floor(indentation)) .. "elseif n == " .. tostring(i) .." then")
-    print(instring:rep(math.floor(indentation)) .. "  print 'hi. ummmm we dont have this number in our database. that's odd. could you tell us if its odd?'")
+    print(instring:rep(math.floor(indentation)) .. "  print 'hi. ummmm we dont have this number in our database. that\\\'s odd. could you tell us if its odd?'")
     print(instring:rep(math.floor(indentation)) .. "  io.read()")
     print(instring:rep(math.floor(indentation)) .. "  print 'ohhhhh gotcha. thanks bro.'")
     print(instring:rep(math.floor(indentation)) .. "  print 'this result will only be added for this session. if you want to add it permanently open a PR at https://github.com/daelvn/isodd/pulls'")
