@@ -1,6 +1,7 @@
 package: isodd
 source:
   url: git://github.com/daelvn/isodd.git
+  tag: main
 description:
   summary: The latest scientific breakthroughs in the field of odd numbers.
   detailed: >
@@ -10,10 +11,17 @@ description:
     to hell and back. Integrates with web services. A true challenged to the homonym
     npm module. Just install it. Come on. Install it. Now. Do it.
   homepage: https://github.com/daelvn/isodd
+  license: SUPER LICENSED!!!!! DO NOT STEAL
 dependencies:
   - lua >= 5.1
 build:
-  type: none
-  install:
-    lua:
-      - isodd.lua
+  type: make
+  build_variables:
+    LUA:         $(LUA)
+    INST_PREFIX: $(PREFIX)
+    INST_LUADIR: $(LUADIR)
+    CFLAGS:      $(CFLAGS)
+  install_variables:
+    LUA:         $(LUA)
+    INST_PREFIX: $(PREFIX)
+    INST_LUADIR: $(LUADIR)
